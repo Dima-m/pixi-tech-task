@@ -117,7 +117,7 @@ class Controller {
     }
 
     /**
-     * Calculates the surface areaoccupied by the shapes
+     * Calculates the surface area occupied by the shapes
      * @param {string} width - width of the shape
      * @param {string} height - height of the shape
      */
