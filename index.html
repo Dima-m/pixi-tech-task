@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pixi.js Tech Task</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
+        
+        <!--styles-->
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="info">
+                <span class="shape-count">Number of shapes: <span id="shapeCount"></span></span>
+                <span class="area-count">Area occupied by shapes: <span id="area"></span> px^2</span>
+            </div>
+
+            <div id="appArea"></div>
+
+            <div class="controls">
+                <span class="shape-speed">
+                    <button id="shapeSpeedMin"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <button id="shapeSpeedPlus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span>Number of shapes/sec: <span id="shapeSpeed"></span></span>
+                </span>
+                
+                <span class="shape-gravity">
+                    <button id="gravityMin"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <button id="gravityPlus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <span >Gravity: <span id="gravity"></span></span>
+                </span>
+            </div>
+        </div>
+    </body>
+    
+    <!--vendor-->
+    <script type="text/javascript" src="node_modules\pixi.js\dist\pixi.js"></script>
+    <script type="text/javascript" src="node_modules\lodash\lodash.min.js"></script>
+    
+    <!--scripts-->
+    <script src="./src/classes/Shape.js"></script>
+    <script src="./src/model/app.model.js"></script>
+    <script src="./src/view/app.view.js"></script>
+    <script src="./src/controller/app.controller.js"></script>
+    <script src="./src/app.constants.js"></script>
+    <script src="./src/app.js"></script>
+</html>
